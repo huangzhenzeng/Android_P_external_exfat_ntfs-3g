@@ -40,7 +40,7 @@ LOCAL_CFLAGS := \
 LOCAL_MODULE := mount.exfat
 LOCAL_SRC_FILES := main.c
 LOCAL_STATIC_LIBRARIES += libexfat_mount libexfat_fsck libexfat_mkfs libexfat_dump libexfat_label
-LOCAL_STATIC_LIBRARIES += libexfat libfuse
+LOCAL_STATIC_LIBRARIES += libexfat libfuse_static
 include $(BUILD_EXECUTABLE)
 
 LINKS := fsck.exfat mkfs.exfat
